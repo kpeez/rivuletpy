@@ -6,8 +6,8 @@ authors = ["RivuletStudio"]
 license = "BSD"
 readme = "README.md"
 include = [
-    {path = "rivuletpy/msfm/*.c", format="sdist"},
-    {path = "rivuletpy/msfm/*.h", format="sdist"}
+    {path = "rivuletpy/msfm/*.c", format="bdist"},
+    {path = "rivuletpy/msfm/*.h", format="bdist"}
 ]
 
 [tool.poetry.build]
