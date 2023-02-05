@@ -11,7 +11,6 @@ import numpy as np
 source_files = [
     "rivuletpy/msfm/msfmmodule.c",
     "rivuletpy/msfm/_msfm.c",
-    "rivuletpy/msfm/common.c",
 ]
 
 # get environmental variables to determine the flow of the build process
