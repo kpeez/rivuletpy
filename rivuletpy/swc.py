@@ -29,7 +29,7 @@ class SWC(object):
     def add(self, swc_nodes):
         np.vstack((self._data, swc_nodes))
 
-    def add_branch(self, branch, pidx=None, random_color=True):
+    def add_branch(self, branch, pidx=None, random_color=False):
         """
         Add a branch to swc.
         Note: This swc is special with N X 8 shape. The 8-th column is the online confidence
