@@ -248,9 +248,10 @@ class R2Tracer(Tracer):
             )
             self._bb[X, Y, Z] = 1
 
-        startidx, endidx = [math.floor(p) for p in branch.pts[0]], [
-            math.floor(p) for p in branch.pts[-1]
-        ]
+        startidx, endidx = (
+            [math.floor(p) for p in branch.pts[0]],
+            [math.floor(p) for p in branch.pts[-1]],
+        )
 
         if (
             len(branch.pts) > 5
@@ -270,7 +271,6 @@ class R2Tracer(Tracer):
         self._bb.fill(0)
 
     def _iterative_backtrack(self):
-
         # Initialise swc with the soma centroid
         swc = SWC(self._soma)
         soma_node = np.asarray(
