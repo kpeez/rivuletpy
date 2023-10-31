@@ -24,7 +24,7 @@ matplotlib = "^3.6.0"
 nibabel = "^4.0.2"
 pyglet = "^1.5.27"
 tqdm = "^4.64.1"
-pylibtiff = "^0.4.4"
+pylibtiff = "^0.6.1"
 SimpleITK = "^2.2.0"
 
 [build-system]
