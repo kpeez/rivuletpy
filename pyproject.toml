@@ -6,15 +6,15 @@ authors = ["RivuletStudio"]
 license = "BSD"
 readme = "README.md"
 include = [
-    {path = "rivuletpy/msfm/*.c", format="sdist"},
-    {path = "rivuletpy/msfm/*.h", format="sdist"}
+    { path = "rivuletpy/msfm/*.c", format = "sdist" },
+    { path = "rivuletpy/msfm/*.h", format = "sdist" },
 ]
 
 [tool.poetry.build]
 script = "build.py"
 
 [tool.poetry.dependencies]
-python = ">=3.8, <3.11" 
+python = ">=3.8, <3.12"
 numpy = "^1.23.3"
 scipy = "^1.9.1"
 Cython = "^0.29.32"
@@ -26,7 +26,6 @@ pyglet = "^1.5.27"
 tqdm = "^4.64.1"
 pylibtiff = "^0.4.4"
 SimpleITK = "^2.2.0"
-
 
 [build-system]
 requires = ["poetry-core", "wheel", "setuptools", "numpy", "Cython"]
