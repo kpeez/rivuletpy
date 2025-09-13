@@ -78,33 +78,25 @@ Pull requests are definitely welcomed! Before you make a pull requests, please k
 
 ## Installation
 
-### Setting up virtual environment
+### Recommended: uv
 
-It is recommended to install rivulet in a virtual enviornment.
+Use `uv` for environment management and installation.
 
 ```bash
-# create env and activate it
-conda create -n riv
-conda activate riv
-# install pip and git
-conda install pip git
+# create and activate a virtual environment
+uv venv
+source .venv/bin/activate
+
+# install from PyPI
+uv pip install rivuletpy
+
+# or install from the repo (editable)
+git clone https://github.com/RivuletStudio/rivuletpy
+uv pip install -e .
+
+# or install latest from GitHub
+uv pip install git+https://github.com/RivuletStudio/rivuletpy
 ```
-
-### Install from PyPI
-
-To install `rivuletpy` from **PyPI** simply activate your virtual environment and run:
-
-```bash
-pip install rivuletpy
-```
-
-### Install from GitHub
-
-Optionally, you can use `pip` to install the latest version directly from GitHub:
-
-```bash
-pip install git+https://github.com/RivuletStudio/rivuletpy
-```  
 
 ## Test Installation
 

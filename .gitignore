@@ -4,9 +4,9 @@ data
 
 # IDE temp files #
 .vscode/
+.cursor/
 .ipynb_checkpoints
 *.egg-info
-
 
 # Python files #
 dist
@@ -16,8 +16,6 @@ build
 *.whl
 *.pytest_cache
 __pycache__
-*.lock
-
 
 # OS generated files #
 ######################
